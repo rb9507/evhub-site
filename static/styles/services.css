@@ -1,0 +1,57 @@
+#serviceContainer {
+    margin: 20px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+#serviceContainer h2 {
+    margin: 20px;
+}
+
+#earth img {
+    background-color: white;
+    width: 26px;
+    transform: translateY(10px);
+}
+
+#serviceContainer h3 {
+    margin: 15px;
+}
+
+#services {
+    text-align: left;
+    font-family: sans-serif;
+    margin: 50px 0px;
+}
+
+#services span {
+    font-size: medium;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#services li {
+    font-size: small;
+    margin: 30px 0px;
+    color: blue;
+}
+
+#services li:before {
+    content: "♦";
+    color: black;
+    margin-right: 10px;    
+}
+
+@media screen and (min-width: 700px) {
+    #services li {
+        font-size: medium;
+    }
+
+    #services li:before {
+        padding: 100px 0px;
+        content: "♦";
+        color: black;
+        margin-right: 10px;    
+    }
+}
+

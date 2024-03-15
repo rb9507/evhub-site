@@ -1,0 +1,574 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#menu {
+    display: none;
+    position: relative;
+    top: 0px;
+    width: 70vw;
+    font-size: 3vh;
+    background-color: darkcyan;
+    animation: menuBar 300ms ease-out;
+    z-index: 10;
+}
+
+.navList1 {
+    animation: listcome 350ms ease-out;
+}
+
+.navList2 {
+    animation: listcome 400ms ease-out;
+}
+
+.navList3 {
+    animation: listcome 450ms ease-out;
+}
+
+.navList4 {
+    animation: listcome 500ms ease-out;
+}
+
+.navList5 {
+    animation: listcome 550ms ease-out;
+}
+
+.navList6 {
+    animation: listcome 600ms ease-out;
+}
+
+@keyframes listcome {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}
+
+@keyframes menuBar {
+    from {
+        width: 0vw;
+        font-size: 0vh;
+    }
+
+    to {
+        width: 70vw;
+        font-size: 3vh;
+    }
+}
+
+@keyframes crossBar {
+    0% {
+        width: 70vw;
+        font-size: 3vh;
+    }
+
+    50% {
+        width: 80vw;
+        font-size: 3vh;
+    }
+
+    100% {
+        width: 0vw;
+        font-size: 0vh;
+    }
+}
+
+#mlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8vh;
+    font-family: sans-serif;
+}
+
+#cross {
+    font-size: x-large;
+    line-height: 10vh;
+    cursor: pointer;
+    padding-left: 10px;
+}
+
+#mlist a {
+    color: white;
+    font-size: 3vh;
+}
+
+#mlist a:hover {
+    color: burlywood;
+}
+
+#hdr h1 {
+    width: 100%;
+}
+
+#hdr {
+    /* background: url(../images/headerbg-home.jpg) no-repeat center; */
+    background: url(../images/headerbg-home.jpg) no-repeat center;
+    background-size: cover;
+    width: 98%;
+    display: flex;
+    height: 100vh;
+    padding: 0 0 0 2vw;
+    z-index: 1;
+}
+
+#hdr_h1 {
+    font-size: 3vw;
+    line-height: 10vh;
+    font-family: sans-serif;
+    color: limegreen;
+    font-weight: bold;
+}
+
+#blackh1 {
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+
+#ham {
+    color: black;
+    margin-left: 83vw;
+    line-height: 10vh;
+    font-weight: bold;
+    font-size: x-large;
+    cursor: pointer;
+    padding-right: 2.5vw;
+    z-index: 100;
+}
+
+.container {
+    padding: 11px;
+    display: grid;
+    grid-template-columns: auto auto;
+    overflow: hidden;
+    justify-content: center;
+    gap: 150px;
+}
+
+.container a {
+    color: black;
+}
+
+.container a:hover {
+    color: green;
+}
+
+.grid-item {
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    border-radius: 5%;
+    padding: 5px;
+    box-shadow: 1px 0px 4px 0px;
+    cursor: pointer;
+}
+
+.grid-item:hover {
+    transform: translateY(-5px);
+    z-index: 1;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 190px;
+    border-radius: 5%;
+}
+
+.grid-item p {
+    padding-top: 20px;
+}
+
+#welcome {
+    text-align: center;
+    transform: translateY(-25vh);
+    color: white;
+    font-size: xx-large;
+    font-weight: bold;
+    font-family: sans-serif;
+    z-index: 2;
+    position: relative;
+}
+
+#choose {
+    text-align: center;
+    margin-bottom: 5vh;
+    font-family: sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#compareEVs {
+    text-align: center;
+    margin-top: 6vh;
+    margin-bottom: 4vh;
+    font-size: x-large;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.arrowdown {
+    font-size: xx-large;
+}
+
+/* The Footer is Started Here */
+
+footer {
+    margin-top: 50px;
+    border-top: 2px solid black;
+    background-color: darkcyan;
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+}
+
+#EV-Hub {
+    text-align: center;
+}
+
+#RB {
+    text-align: center;
+    color: rgb(54, 47, 47);
+}
+
+#copyright {
+    text-align: center;
+    font-weight: 600;
+}
+
+#footerSec {
+    padding: 30px 0; 
+    color: white;
+    font-family: sans-serif;
+}
+
+#footerSec p{
+    text-align: center;
+    color: black;
+}
+
+#footerSec a {
+    display: block;
+    color:  white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#follow {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#followImgs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#followImgs img {
+    border-radius: 10px;
+}
+
+#pollution {
+    margin: 50px 0px;
+}
+
+#polntxt {
+    font-family: sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 4vh;
+}
+
+.polnimgs{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 150px;
+}
+
+.polnimgs img{
+    width: 300px;
+    height: 200px;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 0px 4px 0px;
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        gap: 40px;
+    }
+
+    .polnimgs {
+        gap: 40px;
+    }
+}
+
+@media screen and (min-height: 1081px) {
+    #hdr {
+        background: url(../images/headerbg-homeFOR_LongTabs.jpg) no-repeat center;
+    }
+    #mlist a {
+        font-size: 2vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hdr {
+        background: url(../images/headerbg-homeFOR_Phones.jpg) no-repeat center;
+        background-size: cover;
+        width: 98%;
+        display: flex;
+        height: 100vh;
+        /* height: 60vh; */
+        padding: 0 0 0 2vw;
+        z-index: 1;
+    }
+
+    #main {
+        margin-top: 30px;
+    }
+
+    #welcome {
+        font-size: x-large;
+    }
+
+    #hdr_h1 {
+        font-size: 1.5rem;
+    }
+
+    #ham {
+        font-size: x-large;
+        margin-left: 75vw;
+        padding: 0 10px 0 0;
+    }
+
+    #mlist a {
+        color: white;
+        font-size: 2vh;
+    }
+
+    .container {
+        gap: 15px;
+    }
+
+    .polnimgs {
+        gap: 15px;
+    }
+
+    .polnimgs img{
+        width: 200px;
+        height: 120px;
+    }
+
+    .grid-item img {
+        width: 200px;
+        height: 120px;
+    }
+
+    .grid-item {
+        width: 200px;
+        height: 170px;
+    }
+
+    #choose {
+        font-size: 1.5rem;
+    }
+
+    #car {
+        margin-top: 15px;
+    }
+
+    #cycle {
+        margin-top: 15px;
+    }
+
+    #compCars {
+        margin-top: 15px;
+    }
+
+    #compCycles {
+        margin-top: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #hdr {
+        width: 98%;
+        background: url(../images/headerbg-homeFor_SmallPhones3.jpg) no-repeat center;
+        background-size: cover;
+        height: 100vh;
+    }
+
+    #main {
+        margin-top: 10px;
+    }
+
+    #hdr_h1 {
+        font-size: 1.5rem;
+        line-height: 10vh;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    #menu {
+        width: 100vw;
+        font-size: 2vh;
+    }
+
+    #ham {
+        font-size: x-large;
+        margin-left: 75vw;
+        color: white;
+    }
+
+    #blackh1 {
+        color: black;
+        font-size: small;
+    }
+
+    #cross {
+        color: white;
+        font-size: x-large;
+    }
+
+    #mlist a {
+        color: white;
+        font-size: 2vh;
+    }
+
+    .container {
+        gap: 10px;
+    }
+
+    .polnimgs {
+        gap: 10px;
+    }
+
+    .polnimgs img{
+        width: 150px;
+        height: 100px;
+    }
+
+    .grid-item img {
+        width: 150px;
+        height: 100px;
+    }
+
+    .grid-item {
+        width: 150px;
+        height: 170px;
+    }
+
+    #welcome {
+        font-size: large;
+    }
+
+    #choose {
+        font-size: 1rem;
+    }
+
+    #compareEVs {
+        font-size: medium;
+    }
+
+    #car {
+        margin-top: 25px;
+    }
+
+    #cycle {
+        margin-top: 25px;
+    }
+
+    .poltop {
+        margin-top: 25px;
+    }
+
+    #compCars {
+        margin-top: 25px;
+    }
+
+    #compCycles {
+        margin-top: 25px;
+    }
+
+    #polntxt {
+        font-size: medium;
+    }
+
+    @keyframes menuBar {
+        from {
+            width: 0vw;
+            font-size: 0vh;
+        }
+
+        to {
+            width: 100vw;
+            font-size: 2vh;
+        }
+    }
+
+    @keyframes crossBar {
+        0% {
+            width: 100vw;
+            font-size: 2vh;
+        }
+    
+        50% {
+            width: 110vw;
+            font-size: 2vh;
+        }
+    
+        100% {
+            width: 0vw;
+            font-size: 0vh;
+        }
+    }
+}
+
+@media screen and (max-width: 350px) {
+    #ham {
+        margin-left: 70vw;
+    }
+
+    .container {
+        gap: 7px;
+    }
+
+    .polnimgs {
+        gap: 7px;
+    }
+
+    .polnimgs img{
+        width: 120px;
+        height: 100px;
+    }
+
+    .grid-item img {
+        width: 120px;
+        height: 100px;
+    }
+
+    .grid-item {
+        width: 120px;
+        height: 150px;
+        font-size: small;
+    }
+
+    #welcome {
+        font-size: medium;
+    }
+}

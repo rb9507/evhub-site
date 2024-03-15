@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    user-select: none;
+}
+
+#hdr {
+    background: darkcyan;
+    background-size: cover;
+    width: 98%;
+    position: fixed;
+    height: 60px;
+    padding: 0 0 0 2vw;
+    z-index: 100;
+}
+
+#hdr_h1 {
+    font-size: xx-large;
+    line-height: 60px;
+    font-family: sans-serif;
+    color: limegreen;
+    font-weight: bold;
+}
+
+#blackh1 {
+    color: black;
+    font-size: large;
+    cursor: pointer;
+}
+
+#ham {
+    padding-right: 2.5vw;
+    cursor: pointer;
+    z-index: 10;
+    font-size: x-large;
+    float: right;
+    line-height: 60px;
+    font-weight: bold;
+}
+
+#menu {
+    display: none;
+    width: 50vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: darkcyan;
+    animation: menuBar 300ms ease-out;
+    z-index: 10;
+    margin-bottom: 10px;
+    font-family: sans-serif;
+}
+
+#mlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 8vh;
+    padding-bottom: 15px;
+}
+
+#cross {
+    font-size: x-large;
+    line-height: 60px;
+    cursor: pointer;
+    padding-left: 30px;
+}
+
+#mlist a {
+    color: white;
+    font-size: 3vh;
+}
+
+#mlist a:hover {
+    color: burlywood;
+}
+
+footer {
+    margin-top: 100px;
+    background-color: darkcyan;
+    padding: 20px;
+    font-family: sans-serif;
+    color: black;
+    border-top: 2px solid black;
+}
+
+#EV-Hub {
+    text-align: center;
+}
+
+#copyright {
+    text-align: center;
+    font-weight: 600;
+}
+
+#RB {
+    text-align: center;
+    color: rgb(54, 47, 47);
+}
+
+#footerSec {
+    padding: 30px 0; 
+    color: white;
+    font-family: sans-serif;
+}
+
+#footerSec p{
+    padding-top: 20px;
+    text-align: center;
+    color: black;
+}
+
+#footerSec a {
+    display: block;
+    color:  white;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#follow {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+#followImgs{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#followImgs img {
+    border-radius: 10px;
+}
+
+@keyframes menuBar {
+    from {
+        width: 0vw;
+        font-size: 0vh;
+    }
+
+    to {
+        width: 50vw;
+        font-size: 3vh;
+    }
+}
+
+@keyframes crossBar {
+    from {
+        width: 50vw;
+        font-size: 3vh;
+    }
+
+    to {
+        width: 0vw;
+        font-size: 0vh;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    #hdr_h1 {
+        font-size: 1.5rem;
+    }
+
+    #ham {
+        font-size: x-large;
+    }
+
+    #mlist a {
+        color: white;
+        font-size: 1rem;
+        margin: auto;
+    }
+
+    #cross {
+        padding-left: 20px;
+        font-size: x-large;
+    }
+
+    #menu {
+        width: 100vw;
+    }
+
+    @keyframes menuBar {
+        from {
+            width: 0vw;
+            font-size: 0vh;
+        }
+    
+        to {
+            width: 100vw;
+            font-size: 1rem;
+        }
+    }
+    
+    @keyframes crossBar {
+        from {
+            width: 100vw;
+            font-size: 1rem;
+        }
+    
+        to {
+            width: 0vw;
+            font-size: 0vh;
+        }
+    }
+}
+
+.navList1 {
+    animation: listcome 400ms ease-out;
+}
+
+.navList2 {
+    animation: listcome 450ms ease-out;
+}
+
+.navList3 {
+    animation: listcome 500ms ease-out;
+}
+
+.navList4 {
+    animation: listcome 550ms ease-out;
+}
+
+.navList5 {
+    animation: listcome 600ms ease-out;
+}
+
+.navList6 {
+    animation: listcome 650ms ease-out;
+}
+
+@keyframes listcome {
+    from {
+        transform: translateX(100vw);
+    }
+    to {
+        transform: translateX(0vw);
+    }
+}

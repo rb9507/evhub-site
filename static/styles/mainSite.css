@@ -1,0 +1,156 @@
+main {
+    background-color: beige;
+    font-family: sans-serif;
+}
+
+footer {
+    margin-top: 0px;
+}
+
+.topStuff {
+    display: flex;
+    justify-content: center;
+    width: 700px;
+    margin: auto;
+    background-color: white;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+}
+
+#slideBtn {
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.images {
+    width: 350px;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+}
+
+.images img {
+    padding: 25px;
+    width: 300px;
+}
+
+.navImg {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 700px;
+    margin: auto;
+    background-color: white;
+}
+
+.imgNav {
+    width: 50px;
+    height: 30px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.imgNav:hover {
+    border: 1px solid darkcyan;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+#bikeName {
+    text-align: center;
+}
+
+.right span a {
+    background-color: darkcyan;
+    padding: 5px 2px; 
+    color: white;
+    border-radius: 3px; 
+    cursor: pointer;
+}
+
+.right span a:hover {
+    box-shadow: 1px 1px 5px darkcyan;
+}
+
+.spec {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: auto;
+    background-color: white;
+    gap: 20px;
+}
+
+.spec p {
+    font-family: monospace;
+    padding: 10px;
+    font-size: large;
+    font-weight: 600;
+}
+
+.spec span {
+    font-weight: 400;
+}
+
+@media screen and (max-width: 800px) {
+    .topStuff {
+        width: 505px;
+    }
+    .navImg {
+        width: 505px;
+    }
+    .spec {
+        width: 505px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .topStuff {
+        /* width: 350px; */
+        width: 80%;
+        flex-direction: column-reverse;
+    }
+    .navImg {
+        /* width: 350px; */
+        width: 80%;
+    }
+    .spec {
+        /* width: 350px; */
+        width: 80%;
+    }
+
+    .images {
+        width: 250px;
+        height: 200px;
+    }
+
+    .images img {
+        width: 200px;
+    }
+
+    .slider {
+        margin: auto;
+    }
+
+    .spec p {
+        font-size: medium;
+        font-weight: 700;
+    }
+}

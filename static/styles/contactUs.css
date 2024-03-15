@@ -1,0 +1,98 @@
+main{
+    background: url(../images/other_imgs/contactBG.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: fill;
+    width: 100%;
+}
+
+form {
+    /* border: 1px solid black; */
+    margin: 5vh 20vw;
+    padding: 50px;
+    font-family: sans-serif;
+    border-radius: 20px;
+    background-color: rgb(87, 156, 87);
+}
+
+.inpBox {
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+    color: white;
+}
+
+#inpCheckbox {
+    display: block;
+}
+
+#inpCheckbox {
+    cursor: pointer;
+}
+
+main h2 {
+    text-align: center;
+    font-family: sans-serif;
+    padding-top: 40px;
+    color: white;
+}
+
+.inp {
+    border-radius: 5px;
+    padding: 5px;
+    border: none;    
+    font-size: large;
+}
+
+.inp:focus {
+    outline: 2px solid black;
+}
+
+#checkbox {
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.btn {
+    text-align: center;
+}
+
+#submit {
+    width: 70px;
+    height: 40px;
+    padding: 5px;
+    border: none;
+    background-color: forestgreen;
+    /* font-family: cursive; */
+    font-family: monospace;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 3px 1px black;
+    font-weight: bold;
+}
+
+#submit:active {
+    background-color: rgb(0, 255, 0);
+    box-shadow: 1px 2px 1px 1px black;
+
+}
+
+footer {
+    margin-top: 0px;
+}
+
+@media screen and (max-width: 500px) {
+    form {
+        margin: 5vh 5vw;
+    }
+
+    #inpCheckbox {
+        font-size: small;
+    }
+
+    .inp {
+        font-size: medium;
+    }
+}

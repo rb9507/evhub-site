@@ -1,10 +1,9 @@
-console.log("hello!!");
+require('dotenv').config();
 const express = require('express');
 const path = require('path');
 const app = express();
 const port = 8000;
-const mongoose = require('mongoose'); 
-// const bodyParser = require('body-parser');
+const mongoose = require('mongoose');
 
 const redirect = path.join(__dirname, '/temp/redirecting.html')
 const HomePath = path.join(__dirname, '/temp/index.html');
@@ -14,9 +13,7 @@ const ContactUsPath = path.join(__dirname, '/temp/contactUs.html');
 
 const Ebikes = path.join(__dirname, '/temp/Ebikes.html');
 
-// app.use(express.static(HomePath));
-
-mongoose.connect('mongodb://localhost:27017/EVcontacts');
+mongoose.connect(process.env.DB_CONN_STRING);
 const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function () {
@@ -32,7 +29,7 @@ const contactSchema = new mongoose.Schema({
 const Econtact = mongoose.model('Econtact', contactSchema);
 
 app.use(express.static(path.join(__dirname, '/static')));
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: false }));
 
 
 app.get('/', (req, res) => {
@@ -262,7 +259,7 @@ app.get('/compareCycles', (req, res) => {
     res.sendFile(path.join(__dirname, '/temp/compareCycles.html'));
 })
 
-app.post('/contact',(req, res) => {
+app.post('/contact', (req, res) => {
     var myData = new Econtact(req.body);
     myData.save().then(() => {
         res.status(200).sendFile(redirect);
